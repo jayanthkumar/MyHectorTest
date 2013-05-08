@@ -33,7 +33,11 @@ import org.junit.Test;
 import com.cassandra.constants.Constants;
 import com.cassandra.services.CommonService;
 import com.cassandra.services.SuperService;
-
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class HectorSuperColumnTest {
 	private static final String cfName = "Contacts";
 	private static final String rowkeyid_a = "a_info";

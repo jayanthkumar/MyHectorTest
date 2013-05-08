@@ -17,6 +17,12 @@ import com.google.common.base.Objects;
 
 @Entity
 @Table(name="employee")
+
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class Employee {
 	@Id
 	private Long empId;

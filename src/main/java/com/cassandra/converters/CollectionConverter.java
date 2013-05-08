@@ -12,6 +12,11 @@ import org.apache.log4j.Logger;
 import me.prettyprint.hom.PropertyMappingDefinition;
 import me.prettyprint.hom.converters.Converter;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class CollectionConverter implements Converter<Collection<?>> {
 	private static final Logger log = Logger.getLogger(CollectionConverter.class);
 

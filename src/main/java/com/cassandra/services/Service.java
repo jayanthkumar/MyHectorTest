@@ -25,6 +25,11 @@ import me.prettyprint.hector.api.query.QueryResult;
 import me.prettyprint.hector.api.query.RangeSlicesQuery;
 import me.prettyprint.hector.api.query.SliceQuery;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class Service {
 	//private static final Logger log = LoggerFactory.getLogger(Service.class);
 	private static final Logger log = Logger.getLogger(Service.class);

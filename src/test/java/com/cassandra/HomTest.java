@@ -38,6 +38,11 @@ import me.prettyprint.hector.api.query.QueryResult;
 import me.prettyprint.hector.api.query.RangeSlicesQuery;
 import me.prettyprint.hom.EntityManagerImpl;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class HomTest {
 	private static final Logger log = Logger.getLogger(HomTest.class);
 	private static Cluster cluster = null;

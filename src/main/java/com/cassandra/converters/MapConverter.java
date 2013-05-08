@@ -12,6 +12,11 @@ import org.apache.log4j.Logger;
 import me.prettyprint.hom.PropertyMappingDefinition;
 import me.prettyprint.hom.converters.Converter;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class MapConverter implements Converter<Map<?, ?>>{
 	
 	private static final Logger log = Logger.getLogger(MapConverter.class);

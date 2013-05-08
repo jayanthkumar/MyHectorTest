@@ -29,6 +29,11 @@ import me.prettyprint.hector.api.factory.HFactory;
 import me.prettyprint.hector.api.mutation.MutationResult;
 import me.prettyprint.hector.api.mutation.Mutator;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class CommonService {
 	private Cluster clusterObj;
 	private static final Logger log = Logger.getLogger(CommonService.class);

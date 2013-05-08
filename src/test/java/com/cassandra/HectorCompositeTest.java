@@ -22,7 +22,11 @@ import org.junit.Test;
 import com.cassandra.constants.Constants;
 import com.cassandra.services.CommonService;
 import com.cassandra.services.CompositeKeyService;
-
+/**
+ * 
+ * @author Shiva
+ *
+ */
 public class HectorCompositeTest {
 private static CompositeKeyService compositeKeyService;
 private static CommonService commonService;

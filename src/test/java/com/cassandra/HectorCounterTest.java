@@ -12,7 +12,11 @@ import org.junit.Test;
 import com.cassandra.constants.Constants;
 import com.cassandra.services.CommonService;
 import com.cassandra.services.CounterService;
-
+/**
+ * 
+ * @author Jayanth Kumar.S
+ *
+ */
 public class HectorCounterTest {
 	public static String cfName = "Counters";
 	private static Cluster cluster;

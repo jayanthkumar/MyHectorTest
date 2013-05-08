@@ -16,6 +16,11 @@ import me.prettyprint.hector.api.mutation.Mutator;
 import me.prettyprint.hector.api.query.CounterQuery;
 import me.prettyprint.hector.api.query.QueryResult;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class CounterService {
 	/**
 	 * To create Counter Column Family

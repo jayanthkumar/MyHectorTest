@@ -4,9 +4,14 @@ import me.prettyprint.cassandra.serializers.CompositeSerializer;
 import me.prettyprint.cassandra.serializers.DynamicCompositeSerializer;
 import me.prettyprint.cassandra.serializers.StringSerializer;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public interface Constants {
 	// Configure all this properties before executing tests
-	String CLUSTERNAME = "Strumsoft";
+	String CLUSTERNAME = "coolCluster";
 	String STRATEGYCLASS = org.apache.cassandra.locator.SimpleStrategy.class.getName();
 	String KEYSPACE_NAME = "Test_ks";
 	String HOST = "localhost:9160";

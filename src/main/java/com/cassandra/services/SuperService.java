@@ -32,6 +32,11 @@ import me.prettyprint.hector.api.query.SubSliceQuery;
 import me.prettyprint.hector.api.query.SuperColumnQuery;
 import me.prettyprint.hector.api.query.SuperSliceQuery;
 
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class SuperService {
 	private static final Logger log = Logger.getLogger(SuperService.class);
 	

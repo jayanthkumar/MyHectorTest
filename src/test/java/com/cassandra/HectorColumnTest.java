@@ -27,7 +27,11 @@ import com.cassandra.constants.Constants;
 import com.cassandra.services.CommonService;
 import com.cassandra.services.Service;
 
-
+/**
+ * 
+ * @author Jayanth Kumar
+ *
+ */
 public class HectorColumnTest {
 	private static final String multirowKeyid = "k_insert_info";
 	private static final String rowkeyid = "unique_info";
