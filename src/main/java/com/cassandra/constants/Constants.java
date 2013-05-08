@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra.constants;
+package com.cassandra.constants;
 
 import me.prettyprint.cassandra.serializers.CompositeSerializer;
 import me.prettyprint.cassandra.serializers.DynamicCompositeSerializer;

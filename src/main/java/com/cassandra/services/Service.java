@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra.services;
+package com.cassandra.services;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 
 
 
-import com.strumsoft.cassandra.constants.Constants;
+import com.cassandra.constants.Constants;
 
 import me.prettyprint.cassandra.serializers.LongSerializer;
 import me.prettyprint.hector.api.Keyspace;

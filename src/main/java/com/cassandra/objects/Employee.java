@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra.objects;
+package com.cassandra.objects;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -12,8 +12,8 @@ import javax.persistence.Table;
 import me.prettyprint.hom.annotations.Column;
 import me.prettyprint.hom.annotations.Id;
 
+import com.cassandra.converters.MapConverter;
 import com.google.common.base.Objects;
-import com.strumsoft.cassandra.converters.MapConverter;
 
 @Entity
 @Table(name="employee")
@@ -30,7 +30,7 @@ public class Employee {
 	private Date dob;
 	@Column(name="salary")
 	private Long salary;
-	@me.prettyprint.hom.annotations.Column(name="projectGroup", converter=com.strumsoft.cassandra.converters.CollectionConverter.class)
+	@me.prettyprint.hom.annotations.Column(name="projectGroup", converter=com.cassandra.converters.CollectionConverter.class)
 	private List<String> projectGroup;
 	@me.prettyprint.hom.annotations.Column(name="projectInfo", converter=MapConverter.class)
 	private Map<String,String> projectInfo;

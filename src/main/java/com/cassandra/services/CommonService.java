@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra.services;
+package com.cassandra.services;
 
 import java.util.HashMap;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.strumsoft.cassandra.constants.Constants;
+import com.cassandra.constants.Constants;
 
 import me.prettyprint.cassandra.model.BasicColumnDefinition;
 import me.prettyprint.cassandra.model.BasicColumnFamilyDefinition;

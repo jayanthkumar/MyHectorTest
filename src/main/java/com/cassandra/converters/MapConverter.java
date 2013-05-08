@@ -1,37 +1,39 @@
-package com.strumsoft.cassandra.converters;
+package com.cassandra.converters;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.Collection;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
 import me.prettyprint.hom.PropertyMappingDefinition;
 import me.prettyprint.hom.converters.Converter;
 
-public class CollectionConverter implements Converter<Collection<?>> {
-	private static final Logger log = Logger.getLogger(CollectionConverter.class);
+public class MapConverter implements Converter<Map<?, ?>>{
+	
+	private static final Logger log = Logger.getLogger(MapConverter.class);
 
-	public Collection<?> convertCassTypeToObjType(PropertyMappingDefinition md, byte[] value) {
-		Collection<?> collection = null;
+	public Map<?, ?> convertCassTypeToObjType(PropertyMappingDefinition md,
+			byte[] value) {
+		Map<?, ?> map = null;
 		try {
 			ByteArrayInputStream bis = new ByteArrayInputStream(value);
 			ObjectInputStream ois = new ObjectInputStream(bis);
-			collection = (Collection<?>) ois.readObject();
-			log.debug("Fetching Collection object :" + collection);
+			map = (Map<?, ?>) ois.readObject();
+			log.debug("Fetching Map Result :" + map);
 		} catch (IOException ex) {
 			log.info("IOException :" + ex.getLocalizedMessage());
 		} catch (ClassNotFoundException ex) {
 			log.info("ClassNotFoundException :" + ex.getLocalizedMessage());
 		}
-		return collection;
+		return map;
 	}
 
-	public byte[] convertObjTypeToCassType(Collection<?> value) {
-		log.debug("Inserting Collection object :" + value);
+	public byte[] convertObjTypeToCassType(Map<?, ?> value) {
+		log.debug("Inserting Map object :" + value);
 		ByteArrayOutputStream b = null;
 		ObjectOutputStream o = null;
 		try {

@@ -1,8 +1,8 @@
-package com.strumsoft.cassandra.services;
+package com.cassandra.services;
 
 import org.apache.cassandra.db.CounterColumn;
 
-import com.strumsoft.cassandra.constants.Constants;
+import com.cassandra.constants.Constants;
 
 import me.prettyprint.hector.api.Cluster;
 import me.prettyprint.hector.api.Keyspace;

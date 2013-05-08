@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra;
+package com.cassandra;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,9 +23,9 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.strumsoft.cassandra.constants.Constants;
-import com.strumsoft.cassandra.services.CommonService;
-import com.strumsoft.cassandra.services.Service;
+import com.cassandra.constants.Constants;
+import com.cassandra.services.CommonService;
+import com.cassandra.services.Service;
 
 
 public class HectorColumnTest {

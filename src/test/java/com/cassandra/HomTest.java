@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra;
+package com.cassandra;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -17,9 +17,9 @@ import org.yaml.snakeyaml.scanner.Constant;
 
 import static org.junit.Assert.*;
 
-import com.strumsoft.cassandra.constants.Constants;
-import com.strumsoft.cassandra.objects.Employee;
-import com.strumsoft.cassandra.services.CommonService;
+import com.cassandra.constants.Constants;
+import com.cassandra.objects.Employee;
+import com.cassandra.services.CommonService;
 
 import me.prettyprint.cassandra.serializers.LongSerializer;
 import me.prettyprint.cassandra.serializers.StringSerializer;
@@ -52,7 +52,7 @@ public class HomTest {
 		if(null == cs.getColumnFamily(Constants.KEYSPACE_NAME, "employee")){
 			cs.createColumnFamily(Constants.KEYSPACE_NAME, "employee", false);
 		}
-		em = new EntityManagerImpl(keyspace, "com.strumsoft.cassandra");
+		em = new EntityManagerImpl(keyspace, "com.cassandra");
 	}
 
 	@Test

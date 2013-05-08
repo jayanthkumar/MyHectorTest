@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra;
+package com.cassandra;
 
 import me.prettyprint.hector.api.Cluster;
 import me.prettyprint.hector.api.Keyspace;
@@ -9,9 +9,9 @@ import me.prettyprint.hector.api.factory.HFactory;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.strumsoft.cassandra.constants.Constants;
-import com.strumsoft.cassandra.services.CommonService;
-import com.strumsoft.cassandra.services.CounterService;
+import com.cassandra.constants.Constants;
+import com.cassandra.services.CommonService;
+import com.cassandra.services.CounterService;
 
 public class HectorCounterTest {
 	public static String cfName = "Counters";

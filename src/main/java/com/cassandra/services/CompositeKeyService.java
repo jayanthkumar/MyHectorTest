@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra.services;
+package com.cassandra.services;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra.services;
+package com.cassandra.services;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
-import com.strumsoft.cassandra.constants.Constants;
+import com.cassandra.constants.Constants;
 
 import me.prettyprint.hector.api.Keyspace;
 import me.prettyprint.hector.api.beans.ColumnSlice;

@@ -1,4 +1,4 @@
-package com.strumsoft.cassandra;
+package com.cassandra;
 
 import static org.junit.Assert.*;
 
@@ -30,9 +30,9 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.strumsoft.cassandra.constants.Constants;
-import com.strumsoft.cassandra.services.CommonService;
-import com.strumsoft.cassandra.services.SuperService;
+import com.cassandra.constants.Constants;
+import com.cassandra.services.CommonService;
+import com.cassandra.services.SuperService;
 
 public class HectorSuperColumnTest {
 	private static final String cfName = "Contacts";
