@@ -1,0 +1,39 @@
+﻿Steps to install cassandra:
+I) Single node cluster configuration:
+	1) Create a folder like D:/cassandra
+	2) Download cassandra zip file from http://cassandra.apache.org/download/ link
+	3) Extract zip file under cassandra folder created in above step
+	4) Go to Cassandraa extracted archive and navigate to folder named "conf"
+	5) Open the file named "cassandra.yaml" in your favorite text editor.
+	6) In the "Cassandra.yaml" Set the values of 
+		a) data_file_directories=D:/cassandra/data folder.
+		b) commitlog_directory=D:/cassandra/commitlog folder.
+		c) saved_caches_directory=D:/cassandra/saved_cache folder.
+		d) Edit cluster name as per our convinient otherwise by default cluster_name="Test Cluster" 
+	7) Set the cassandra path as environment variable $CASSANDRA_HOME=D:/cassandra/apache-cassandra-1.2.3-bin/apache-cassandra-1.2.3
+	8) Open cmd and navigate to the bin in your “Cassandra” folder and type cassandra -f as like below
+		Example :D:/cassandra/apache-cassandra-1.2.3-bin/apache-cassandra-1.2.3\bin>cassandra -f
+	9) Now your cassandra server have started to work on your localhost with portno 9160.
+	
+II) Multiple nodes cluster configuration:
+	1) Create a folder D:/cassandra
+	2) Download cassandra zip file from http://cassandra.apache.org/download/ link
+	3) Extract zip file under cassandra
+	4) Go to Cassandraa extracted archive and navigate to folder named “conf”
+	5) Open the file named “cassandra.yaml” in your favorite text editor.
+	6) Modify following details as per our convienent in cassandra.yaml file in Machine A 
+		cluster_name: "MyclusterName"
+		listen_address: 192.168.2.17(Machine A address)
+		rpc_address: 0.0.0.0   
+		- seeds: "192.168.2.17" (For the nodes understand each other)
+	7) Modify following details as per our convienent in cassandra.yaml file in Machine B
+		cluster_name: "MyclusterName"
+		listen_address: 192.168.2.186(Machine B address)
+		rpc_address: 0.0.0.0   
+		- seeds: "192.168.2.17"
+	8) Use following command to test above two nodes are in a cluster i.e "MyclusterName"
+		$CASSANDRA_HOME/bin>nodetool ring
+		
+Note: 1) Restart server once we done modification in cassandra.yaml.
+      2) Use system ip address if we connected multiple nodes cluster
+      

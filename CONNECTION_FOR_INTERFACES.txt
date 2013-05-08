@@ -1,0 +1,30 @@
+﻿Steps to connect cassandra interfaces:
+I) Connection for Cassandra CLI interface:
+	1) Use installation guide in INSTALL.txt for Cassandra
+	2) Open cmd and navigate to the bin in your “Cassandra” folder and type cassandra -f as like below
+		$CASSANDRA_HOME\bin>cassandra -f
+	3) Now your cassandra server have started to work on your localhost with portno 9160.
+	4) Now lets Connect with Cassandra by following cmnds on your new command probmt
+		a) Go to $CASSANDRA_HOME\bin
+		b) Enter cassandra-cli.bat
+		c) See your output will be 
+			Starting Cassandra Client
+			Welcome to the Cassandra CLI.
+
+			Type 'help;' or '?' for help.
+			Type 'quit;' or 'exit;' to quit.
+		d) Then Connect with Cluster by using below cmnd
+			connect localhost/9160;
+			output will be 
+			Connected to: "Test Cluster" on localhost/9160
+			[default@unknown]
+II) Connection for Cassandra CQL interface:
+	1) Use installation guide in INSTALL.txt for Cassandra
+	2) install python using the http://www.python.org/getit/ link  and set environment varaible $PYTHON_HOME=C:\Python27
+	3) Go to ‘$CASSANDRA_HOME/pylib’ and run command ‘python setup.py install’
+	4 You can access CQL client :Open ‘$CASSANDRA_HOME/bin/’ in Command Prompt.  
+	5) Use command ‘ python cqlsh localhost 9160‘.
+	You will get cqlsh(aka CQL) command prompt.
+	
+	
+Note: Use ip address if we connected multiple nodes cluster.
